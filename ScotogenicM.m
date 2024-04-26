@@ -63,7 +63,7 @@ DEFINITION[GaugeES][LagrangianInput]=
 
 (*For multiplication of fields use the dot*)
 
-LagFer     =     Yn l . n . Eta + Mn/2 n . n;
+LagFer     =     Yn l . n . Eta + Mn/2 n . n + Yd conj[H] . d . q+ Ye conj[H] . e . l+ Yu H . u . q;
 
 LagH       = -(+ muH2 conj[H] . H + 1/2 lambdaH conj[H] . H . conj[H] . H );
 LagEta      = -(+ muEta2 conj[Eta] . Eta  + 1/2 lambdaEta conj[Eta] . Eta . conj[Eta] . Eta );
@@ -96,7 +96,7 @@ CP-even and CP-odd components*)
 
 DEFINITION[EWSB][VEVs]= 
 {
-  {H0  	 ,   {v, 1/Sqrt[2]}   , {sig0, I/Sqrt[2]}  ,  {phih, 1/Sqrt[2]}}, 
+  {H0  	 ,   {v, 1/Sqrt[2]}   , {Ah, I/Sqrt[2]}  ,  {hh, 1/Sqrt[2]}}, 
   {eta0	 ,   {0, 0}           , {etaI, I/Sqrt[2]} ,  {etaR, 1/Sqrt[2]}}
 };
 

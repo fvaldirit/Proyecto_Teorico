@@ -109,34 +109,10 @@ ParameterDefinitions = {
 	LesHouches -> MN,
 	OutputName -> "Mn" }},
 
-{ZH,       {Description		-> "Scalar-Mixing-Matrix",
-             LaTeX		-> "Z^H",
-             LesHouches 	->  ZH0,
-             OutputName 	->  ZH,
-             Dependence 	->  None,
-             DependenceOptional ->  None,
-             DependenceNum 	->  None} },
-
 {ZZ, {Description 	->  "Photon-Z Mixing Matrix"}},
 
 {ZW, {Description 	->  "W Mixing Matrix",
-       Dependence 	->   1/Sqrt[2] {{1, 1},{I,-I}} }},
-                  
-{ZH,       { Description 	-> "Scalar-Mixing-Matrix",
-             LaTeX	 	-> "Z^H",
-             LesHouches  	->  ZH0,
-             OutputName  	->  ZH,
-             Dependence  	->  None,
-             DependenceOptional ->  None,
-             DependenceNum 	->  None} },
-
-{ZA,       { Description ->"Pseudo-Scalar-Mixing-Matrix",
-             LesHouches -> ZA0,
-             LaTeX->"Z^A",
-             OutputName -> ZA,
-             Dependence -> None,
-             DependenceOptional -> None,
-             DependenceNum -> None} },
+       Dependence 	->   1/Sqrt[2] {{1, 1},{I,-I}} }},               
  
 {ZX,	{LaTeX -> "Z^{\\chi^0}",
 	LesHouches -> ZXMIX,

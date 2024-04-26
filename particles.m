@@ -50,7 +50,7 @@ ParticleDefinitions[GaugeES] =
            Width 	 -> 	0,
            Mass 	 -> 	Automatic,
            LaTeX 	 -> 	"n0",
-           OutputName 	 -> 	"n0"}},   
+           OutputName 	 -> 	"n0"}},
                
     {VB,  {Description	 -> 	"B-Boson"}},
     {VG,  {Description	 -> 	"Gluon"}},
@@ -63,14 +63,23 @@ ParticleDefinitions[GaugeES] =
 
 ParticleDefinitions[EWSB] = {
 
-(*   no veo donde se usa hh :S cambio hh por H0 *)
 
-    {H0,   {Description	     ->  "Higgs",
+
+    {hh,   {Description	     ->  "Higgs",
             PDG		     ->  {25,1111},
             PDG.IX	     ->  {101000001,0}, 
             FeynArtsNr       ->  900000010,
             ElectricCharge   ->  0 }},
-
+            
+    {Ah,   {Description      -> "Pseudo-Scalar Higgs",
+            PDG 	     -> {0,200002},
+            Mass 	     -> Automatic,
+            Width 	     -> Automatic,
+            ElectricCharge   -> 0,
+            FeynArtsNr 	     -> 900000011,
+            LaTeX 	     -> "Ah",
+            OutputName 	     -> "Ah" }}, 
+                     
         
     {Hp,   {Description      ->  "Charged Higgs", 
             PDG              ->  {0},
@@ -81,6 +90,7 @@ ParticleDefinitions[EWSB] = {
             OutputName 	     ->  {"Hp","Hm"},
             ElectricCharge   ->  1}},
             
+    
     {etaR,   {Description     ->  "CP-even eta scalar",
              PDG 	     ->  {1001},
              Mass	     ->  LesHouches,
@@ -99,23 +109,13 @@ ParticleDefinitions[EWSB] = {
              ElectricCharge  ->  1,
              LaTeX 	     ->  "\\eta^+",
              OutputName      ->  "etp"}},
-             
-(* Hay algún error con la carga de sig0 y phih, cambié de 1 a 0 *)  
-                         
+                                    
     {sig0,   { Description     ->  "Sigma scalar",
     	     PDG 	     ->  {1004},
              Mass 	     ->  LesHouches,
              ElectricCharge  ->  0,
              LaTeX 	     ->  "\\sigma",
              OutputName      ->  "sig0"}},   
-               
-(* Me salió error por esto y lo puse :S *)                   
-    {phih,   { Description     ->  "Phi H",
-    	     PDG 	     ->  {1005},
-             Mass 	     ->  LesHouches,
-             ElectricCharge  ->  0,
-             LaTeX 	     ->  "\\phi_H",
-             OutputName      ->  "phih"}}, 
     
     {VP,    {Description     ->  "Photon"}},
     {VZ,    {Description     ->  "Z-Boson",
@@ -150,7 +150,7 @@ ParticleDefinitions[EWSB] = {
                  OutputName -> "" }},
     
     {Eta,  {LaTeX -> "\\eta"}},
-    {Sig, {LaTeX -> "\\sigma"}},
+    {Sig,  {LaTeX -> "\\sigma"}},
     
     {dR,  {LaTeX -> "d_R"}},
     {eR,  {LaTeX -> "e_R"}},
@@ -171,9 +171,8 @@ ParticleDefinitions[EWSB] = {
     {X0,  {LaTeX -> "x0"}},
     {VL,  {LaTeX -> "\\nu_{LL}"}},
 	
-    {phih,    {LaTeX -> "\\phi_H"}},
-    {n,   {LaTeX -> "N"}},
-    {n0,   {LaTeX -> "N_R"} }
+    {n,   {LaTeX -> "N"}}(*,
+    {n0,   {LaTeX -> "N_R"} }*)
 
 };
 

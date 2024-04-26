@@ -34,7 +34,6 @@ BoundaryLowScaleInput={
   {Mn, LHInput[Mn]}
 };
 
-DEFINITION[MatchingConditions]= Default[THDMII];
 (*
  {{v, vSM},
   {Ye, YeSM},
@@ -44,5 +43,5 @@ DEFINITION[MatchingConditions]= Default[THDMII];
   {g2, g2SM},
   {g3, g3SM}};
   *)
-ListDecayParticles = {Fu,Fe,Fd,Fv,VZ,VWp,H0,etaR,etaI,etap,Chi,sig0,phih};
+ListDecayParticles = {Fu,Fe,Fd,Fv,VZ,VWp,H0,etaR,etaI,etap,Chi,sig0,Ah,hh};
 ListDecayParticles3B = {{Fu,"Fu.f90"},{Fe,"Fe.f90"},{Fd,"Fd.f90"}};
